@@ -1,14 +1,22 @@
-html,body {
+html,body{
     margin:0;
     padding:0;
     height:100%;
     width:100%;
-}
+  }
+  html{
+    --top-spacing: 10px;
+    scroll-padding-top: var(--top-spacing);
+  }
 #header{
+   position: fixed;
     margin:0px;
+    width: 100%;
+    height: 25px;
     padding-top: 10px;
     padding-bottom:35px;
     padding-right: 70px;
+    text-align: right;
     padding-left: 1px;
     background-color:black;
 }
@@ -37,19 +45,23 @@ padding-bottom:1px;
 .nav-link{
     color:mediumspringgreen;
 }
+.nav-link:hover {
+    color: rgb(118, 200, 233);
+  }
+  
 .container-1{
-    box-sizing: border-box;
     padding-bottom: 420px;
     margin: 0%;
-    background-color: black;
+
+    background-color:black;
 }
 .HI{
         float:left;
         padding-right: 0px;
         margin-right: 0px;
          font-size: 85px;
-         padding-left: 23%;
-         padding-top: 13%;
+         padding-left: 29.3%;
+         padding-top: 19%;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
          background: lavenderblush;
          -webkit-background-clip: text;
@@ -60,8 +72,8 @@ padding-bottom:1px;
 .Name{
         padding-top:0px; 
            font-size:95px;
-           padding-top: 23%;
-           padding-left: 16%;
+           padding-top: 28%;
+           padding-left: 17%;
            margin-top: 0px;
            margin-left: 0px;
            background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(70, 68, 189) 40%,rgb(223, 53, 53) 60%,
@@ -72,7 +84,7 @@ padding-bottom:1px;
 }
 .tagline{
     background: linear-gradient(to right,rgb(250, 250, 250) 0%, floralwhite 50%,lightgray 100%);
-    margin-left: 385px;
+    margin-left: 390px;
     padding-top: 10px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
