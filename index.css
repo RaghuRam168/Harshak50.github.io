@@ -4,7 +4,7 @@ html,body{
     height:100%;
     width:100%;
   }
-  html{
+  html{ scroll-behavior: smooth;
     --top-spacing: 10px;
     scroll-padding-top: var(--top-spacing);
   }
@@ -46,11 +46,11 @@ padding-bottom:1px;
     color:mediumspringgreen;
 }
 .nav-link:hover {
-    color: rgb(89, 208, 238);
+    color: lavender;
   }
   
 .container-1{
-    padding-bottom: 400px;
+    padding-bottom: 135px;
     margin: 0%;
 
     background-color:black;
@@ -76,8 +76,8 @@ padding-bottom:1px;
            padding-left: 17%;
            margin-top: 0px;
            margin-left: 0px;
-           background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(70, 68, 189) 40%,rgb(223, 53, 53) 60%,
-           rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
+           background: linear-gradient(to right,rgb(122, 243, 9) 10%, rgb(86, 253, 9) 20%, rgb(61, 58, 243) 40%,rgb(245, 31, 31) 60%,
+           rgb(231, 170, 37) 80%,rgb(255, 183, 29) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -92,6 +92,92 @@ padding-bottom:1px;
           -webkit-text-fill-color: transparent;
 
 }
+
+.scroll{
+  position: relative;
+  width: 24px;
+  padding-top: 13%;
+  padding-left: 48.5%;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  padding-top: 63px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
  .Aboutme{
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align: center;
@@ -116,12 +202,58 @@ padding-bottom:1px;
      padding-left:80px;
      text-align: right;
     font-size: 20px;    
-    padding-top: 2%; 
+    padding-top: 1%; 
  } 
- .para{
+ .para,.para1{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    padding-left:34%;
    padding-right:20%;
    color: gray;
    font-size: 24px;
  }
+ 
+#accounts{
+  padding-left: 37.5%;
+  padding-top: 4%;
+}
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 6px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram{
+    background: linear-gradient( rgb(233, 60, 140) 0%, rgb(113, 40, 207) 90%,rgb(243, 184, 57) 100%);
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
