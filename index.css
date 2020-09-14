@@ -50,7 +50,7 @@ padding-bottom:1px;
   }
   
 .container-1{
-    padding-bottom: 7%;
+    padding-bottom: 8%;
     margin: 0%;
 
     background-color:black;
@@ -181,7 +181,7 @@ padding-bottom:1px;
  .Aboutme{
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align: center;
-     padding-top: 20px;
+     padding-top: 30px;
      font-size: 50px;
      background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(36, 33, 184) 40%,rgb(223, 53, 53) 60%,
            rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
@@ -218,14 +218,17 @@ padding-bottom:1px;
   padding-top: 4%;
 }
  .fa {
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
     font-size: 30px;
     width: 30px;
     height: 15px;
     text-align: center;
     border-radius: 3px;
     text-decoration: none;
-    margin: 6px 2px;
+    margin: 6px;
 
 }
 
