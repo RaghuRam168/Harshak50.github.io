@@ -21,11 +21,11 @@ html,body{
     background-color:black;
 }
 .nav-item{
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 18px;
+    padding-right: 15px;
     float:right;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:lighter;
+    font-weight:light;
     font-size:23px;
 }
 .name{
@@ -43,7 +43,7 @@ html,body{
 padding-bottom:1px;
 }
 .nav-link{
-    color:mediumspringgreen;
+    color:rgb(45, 247, 186);
 }
 .nav-link:hover {
     color: lavender;
@@ -193,6 +193,7 @@ padding-bottom:1px;
     width: 300px;
     height: 300px;
     float: left;
+    padding: 2.5%;
     margin:0px;
     border-radius: 50%;
     line-height: 0;		/* remove line-height */ 
