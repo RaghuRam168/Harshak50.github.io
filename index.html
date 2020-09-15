@@ -5,29 +5,67 @@
         <link rel="stylesheet" href="index.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <section id="header" class="header" style="border-bottom: 0.01px darkgray; border-style: solid;">
+
+
+            <script>
+                function filterPath(string) {
+  return string
+    .replace(/^\//, '')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+    .replace(/\/$/, '');
+}
+
+var locationPath = filterPath(location.pathname);
+$('a[href*="#"]').each(function () {
+  var thisPath = filterPath(this.pathname) || locationPath;
+  var hash = this.hash;
+  if ($("#" + hash.replace(/#/, '')).length) {
+    if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
+      var $target = $(hash), target = this.hash;
+      if (target) {
+        $(this).click(function (event) {
+          event.preventDefault();
+          $('html, body').animate({scrollTop: $target.offset().top}, 1000, function () {
+            location.hash = target; 
+            $target.focus();
+            if ($target.is(":focus")){ //checking if the target was focused
+              return false;
+            }else{
+              $target.attr('tabindex','-1'); //Adding tabindex for elements not focusable
+              $target.focus(); //Setting focus
+            };
+          });       
+        });
+      }
+    }
+  }
+});
+            </script>
+
+
             <p class="name">
                 <a href ="#top"  class = "nav" style ="text-decoration:none; color: lavenderblush;">Portfolio</a></p>
         <div id="container-0">
             <nav class = "navbar">
                 <ul class="nav-ul">
                     <ul class="nav-item">
-                        <a href="#top-of-page" class  = "nav-link"style ="text-decoration:none;
+                        <a href="#top-of-page" class  = "nav-link" id = "nav-link" style ="text-decoration:none;
                          padding-right:4px;">Resume</a>
                          </ul>
                     <ul class="nav-item">
-                        <a href ="#container-5"  class = "nav-link" style ="text-decoration:none;
+                        <a href ="#container-5"  class = "nav-link" id = "nav-link" style ="text-decoration:none;
                         ">Contact</a>
                         </ul>
                     <ul class="nav-item">
-                        <a href="#container-5" class = "nav-link"  style ="text-decoration:none;
+                        <a href="#container-5" class = "nav-link" id = "nav-link" style ="text-decoration:none;
                         transform: translate(4px);">Projects</a>
                          </ul>
                     <ul class="nav-item">
-                        <a href="#container-4" class = "nav-link" style ="text-decoration: none; 
+                        <a href="#container-4" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
                         ">Experience</a>
                         </ul>
                     <ul class="nav-item">
-                        <a href="#container-2" class = "nav-link" style ="text-decoration: none; 
+                        <a href="#container-2" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
                         ">About Me</a>
                             
                 </ul>
