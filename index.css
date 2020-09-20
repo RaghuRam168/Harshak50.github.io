@@ -4,11 +4,11 @@ html,body{
     height:100%;
     width:100%;
   }
-  html{ scroll-behavior: smooth;
+ /* html{ scroll-behavior: smooth;
     --top-spacing: 10px;
     scroll-padding-top: var(--top-spacing);
   }
-
+  */
                                                                             /* header*/
 #header{
    position: fixed;
