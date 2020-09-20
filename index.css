@@ -8,6 +8,8 @@ html,body{
     --top-spacing: 10px;
     scroll-padding-top: var(--top-spacing);
   }
+
+                                                                            /* header*/
 #header{
    position: fixed;
     margin:0px;
@@ -49,18 +51,18 @@ padding-bottom:1px;
 .nav-link:hover {
     color: lavender;
   }
-  
+                                                    /* main */
 .container-1{
     padding-bottom: 8%;
     margin: 0%;
     background-color:black;
 }
 .HI{
-        float:left;
+        
         padding-right: 0px;
         margin-right: 0px;
          font-size: 85px;
-         padding-left: 36.3%;
+        text-align: center;
          padding-top: 19%;
          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
          background: lavenderblush;
@@ -72,8 +74,8 @@ padding-bottom:1px;
 .Name{
         padding-top:0px; 
            font-size:95px;
-           padding-top: 28%;
-           padding-left: 21%;
+           padding-top: 1%;
+           text-align: center;
            margin-top: 0px;
            margin-left: 0px;
            background: linear-gradient(to right,rgb(122, 243, 9) 10%, rgb(86, 253, 9) 20%, rgb(61, 58, 243) 40%,rgb(245, 31, 31) 60%,
@@ -84,15 +86,62 @@ padding-bottom:1px;
 }
 .tagline{
     background: linear-gradient(to right,rgb(250, 250, 250) 0%, floralwhite 50%,lightgray 100%);
-    margin-left: 390px;
-    padding-top: 10px;
+    text-align: center;
+    padding-top: 0px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
 
+}                                      /* social media accounta*/
+#accounts{
+  padding-left: 37.5%;
+  padding-top: 4%;
+}
+ .fa {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 3px 4px;
+
 }
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram{
+    background: linear-gradient( rgb(233, 60, 140) 0%, rgb(113, 40, 207) 90%,rgb(243, 184, 57) 100%);
+    color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+                            /* scroll over animation */
 .scroll{
   position: relative;
   width: 24px;
@@ -175,20 +224,19 @@ padding-bottom:1px;
   to {
     opacity: 1;
   }
-}
-
+}             
+                                                     /* About me*/
 
  .Aboutme{
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align: center;
-     padding-top: 30px;
+     padding-top: 40px;
      font-size: 50px;
      background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(36, 33, 184) 40%,rgb(223, 53, 53) 60%,
            rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
            -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
  }
-
  #photo {
     width: 300px;
     height: 300px;
@@ -196,15 +244,13 @@ padding-bottom:1px;
     padding: 2.5%;
     margin:0px;
     border-radius: 50%;
-    line-height: 0;		/* remove line-height */ 
-
   }
  #intro{
-     padding-left:80px;
+     padding-left:30px;
      text-align: right;
      font-size: 20px;    
     
-     padding-top: 1%; 
+     padding-top: 0%; 
  } 
  .para,.para1{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -213,52 +259,99 @@ padding-bottom:1px;
    color: gray;
    font-size: 24px;
  }
- 
-#accounts{
-  padding-left: 37.5%;
-  padding-top: 4%;
-}
- .fa {
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    width: 30px;
-    height: 15px;
-    text-align: center;
-    border-radius: 3px;
-    text-decoration: none;
-    margin: 6px;
+      
+         
+ /*skills*/
+ .skill-main{
 
+   padding-left: 10%;
+ }
+ .skill-00{
+   float:left;
+   padding-left: 7%;
+ }
+ .skill-01{
+padding-right: 20%;
+   float:right;
+ }
+ .skill-container {
+  width: 300px;
+  height: 7px;
+  background-color: #ddd;
 }
+.html {width: 70%; height:7px; background-color: #f0701a;}
+.js{width: 20%;  height:7px;background-color: #2196F3;}
+.git {width: 85%;  height:7px;background-color: rgb(248, 193, 11)}
+.c {width: 70%;  height:7px;background-color: #42e6a7;}
+.java {width: 85%;  height:7px;background-color: #7f1dcf;}
+.cpp {width: 50%;  height:7px;background-color: #17d340;}
+.flutter {width: 25%;  height:7px;background-color: #c01d11;}
 
-.fa:hover {
-    opacity: 0.7;
+
+
+
+                                               /* projects */
+
+.container-5{
+  background-color:rgb(255, 255, 255);
+  padding-bottom: 21%;
 }
-
-.fa-facebook {
-  background: #3B5998;
+.Projects{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',' Geneva', Verdana, sans-serif;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 70px;
+  background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(36, 33, 184) 40%,rgb(223, 53, 53) 60%,
+        rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+}
+.row-1{
+  margin-bottom: 400px;
+}
+.card{
+  width: 310.5px;
+  margin-top: 1%;
+  float:right;
+  margin-right: 6%;
+  padding-bottom: 2.5%;
+  border-radius: 5px;
+  background-color:rgba(179, 212, 231, 0.473); 
+  margin-left: 5%;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  -webkit-transform: scale(1.065);
+  transform: scale(1.065);
+}
+.card-img-top{
+  width:310.8px;
+  border-top: gray 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: white;
+}
+.card-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 20px;
+}
+.card-text{
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+.btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
   color: white;
-}
+  margin-top: 80px;
+  font-size: 20px;
+  background-color:rgba(27, 89, 223, 0.527);
+  border-radius:5px;
+  margin-left: 90px;
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
 }
-
-.fa-instagram{
-    background: linear-gradient( rgb(233, 60, 140) 0%, rgb(113, 40, 207) 90%,rgb(243, 184, 57) 100%);
-    color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-github {
-  background: black;
-  color: white;
-}
-

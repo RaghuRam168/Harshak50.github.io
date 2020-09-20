@@ -3,7 +3,10 @@
     <head>
         <title>Harsha's Portfolio</title>
         <link rel="stylesheet" href="index.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+          <script type="text/javascript" src="index.js"></script>
+      
         <section id="header" class="header" style="border-bottom: 0.01px darkgray; border-style: solid;">
             <p class="name">
                 <a href ="#top"  class = "nav" style ="text-decoration:none; color: lavenderblush;">Portfolio</a></p>
@@ -19,15 +22,15 @@
                         ">Contact</a>
                         </ul>
                     <ul class="nav-item">
-                        <a href="#container-5" class = "nav-link" id = "nav-link" style ="text-decoration:none;
-                        transform: translate(4px);">Projects</a>
+                        <a href="#whitespace-2" class = "nav-link" id = "nav-link" style ="text-decoration:none;
+                     ;">Experience</a>
                          </ul>
                     <ul class="nav-item">
-                        <a href="#container-4" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
-                        ">Experience</a>
+                        <a href="#whitespace-2" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
+                        ">Projects</a>
                         </ul>
                     <ul class="nav-item">
-                        <a href="#container-2" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
+                        <a href="#whitespace-0" class = "nav-link"  id = "nav-link" style ="text-decoration: none; 
                         ">About Me</a>
                     </ul>      
                 </ul>
@@ -37,19 +40,19 @@
     </head>
 
     
-    <body>
+    <body>                             <!-- main container-->
           <div class="container-1" id="container-1">
            <li class="HI" style="list-style: none;" id="HI">Hello, I am</li>
            <li class="Name" style="list-style: none;" id="Name">HARSHAVARDHAN</li>
            <li class="tagline"  style="list-style: none;" id="tagline"> Sophomore | Front End Web Developer | Open Source Enthusiast </li>
+
            <div class="accounts" id="accounts" style="align-items: center;">
             <a href="www.linkedin.com/in/harsha-vardhan-213ba3184" class="fa fa-linkedin" style="font-size: 25px;"></a>
-            <a href="#" class="fa fa-github" style="font-size: 25px;"></a>
+            <a href="#" class="fa fa-github" style="font-size:25px;"></a>
             <a href="#" class="fa fa-twitter" style="font-size: 25px;" ></a>
             <a href="#" class="fa fa-instagram" style="font-size: 25px;"></a>
             <a href="#" class="fa fa-facebook"  style="font-size: 25px;"></a>
-
-       </div>
+           </div>
 
            <div class="scroll">
             <div class="chevron"></div>
@@ -57,11 +60,14 @@
             <div class="chevron"></div>
             <span class="text">Scroll down</span>
           </div>
-           </div>
 
+         </div>
 
-           <div class="container-2" id="container-2" style="padding-top: 5px; padding-bottom: 19%;  background-color:floralwhite;">
-            <p class="Aboutme" id = "Aboutme">About Me</p>
+                <!-- About Me-->
+
+           <div id="whitespace-0"></div>
+            <div class="container-2" id="container-2" style="padding-top: 5px; padding-bottom: 21%;  background-color:floralwhite;">
+              <p class="Aboutme" id = "Aboutme">About Me</p>
                 <p class = "intro" id="intro">  <img src="Images/img.jpeg" alt="Avatar" class="photo" id="photo" ><p class="para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. hgv vel dolor tempore hic dignissimos dolore, ul
                     Inventore libero ut nam sapiente eum, explicabo 
@@ -69,31 +75,102 @@
                     odio, a in officiis ullam sunt omnis lorem dignissimos?Lorem ipsum dolor sitofficiis usectetur, adipisicing elit. 
                     Architecto est placeat iure dolorem ad! Vero sunt sint ips repellendus nesciunt odio debitis ulla nisi atqueki
                     vel dolor enumto tempore hic dignissimos dolore, ullam inventore mollitia.sit amet consectetur,officiisofficiis </p>
-                   <p class = "para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam, amet aliquam des</p>
-                <!--
-                   <ul>skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-                    <ul id="skill" class="skill">skill</ul>
-               -->
+                   <p class = "para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam, amet aliquam des</p></p>
+            <!--skills-->
+                   <div class="skill-main">
+               <div class="skill-00" id="skill-00">
+                <p>Html/Css</p>
+                <div class="skill-container">
+                  <div class="skills html" id="html"></div>
+                </div>
+                
+                <p>Javascript</p>
+                <div class="skill-container">
+                  <div class="skills js" id="js"></div>
+                </div>
+                
+                <p>Git/Github</p>
+                <div class="skill-container">
+                  <div class="skills git" id="git"></div>
+                </div>
+                
+                <p>C</p>
+                <div class="skill-container">
+                  <div class="skills c" id="c"></div>
+                </div>
+              </div>
 
-                  
+              <div class="skill-01"  id="skill-01">
+                <p>Java</p>
+                <div class="skill-container">
+                  <div class="skills java" id="java"><p class="percentage"></p></div>
+                </div>
+                
+                <p>C++</p>
+                <div class="skill-container">
+                  <div class="skills cpp" id="cpp"></div>
+                </div>
+                
+                <p>Flutter</p>
+                <div class="skill-container">
+                  <div class="skills flutter" id="flutter"></div>
+                </div>
+    
+              </div>
+              </div>
+            </div>
+                               
+
+           <!-- projects-->
+           <div id="whitespace-2" style="padding-top: 0px;"></div>
+           <div class="container-5" id="container-5">
+            <p class="Projects" id = "Projects">Projects</p>
+               <div class="row-1">
+               <div class="card">
+                <img class="card-img-top" src="/Images/img-1.png">
+                <div class="card-body">
+                  <h1 class="card-title">Flutter</h1>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Porro fuga quam modi enim sapiente officia quasi eaque qui dicta magni odit, 
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <img class="card-img-top" style="margin-bottom: 10px;" src="/Images/img-2.png">
+                <div class="card-body">
+                  <h1 class="card-title">Web Development</h1>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro fuga quam modi enim sapiente officia quasi eaque qui dicta magni odit, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="card-img-top" src="/Images/img-3.png">
+                <div class="card-body">
+                  <h1 class="card-title">Android Development</h1>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro fuga quam modi enim sapiente officia quasi eaque qui dicta magni odit, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+
            </div>
+           </div>
+   
 
-           
 
 
-          <section id="container-4" style="padding-top:90px 50px; background-color:black; font-size: 60px;">
-          </section>
-          <section id="container-5" style="padding:300px 50px;background-color: black; font-size: 60px;">
-            about me
-          </section>
-          <section id="container-6" style="padding:300px 50px; background-color:black; font-size: 60px;">
-            about me
-          </section>
+            
+
 
     </body>
 </html>
