@@ -3,7 +3,7 @@ function saveToFirebase(email) {
         email: email
     };
 
-    firebase.database().ref('subscription-entries').push().set(emailObject)
+    firebase.database().ref('messages').push().set(emailObject)
         .then(function(snapshot) {
             success(); // some success method
         }, function(error) {
