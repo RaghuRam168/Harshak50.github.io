@@ -4,11 +4,11 @@ html,body{
     height:100%;
     width:100%;
   }
- /* html{ scroll-behavior: smooth;
+  html{ scroll-behavior: smooth;
     --top-spacing: 10px;
     scroll-padding-top: var(--top-spacing);
   }
-  */
+  
                                                                             /* header*/
 #header{
    position: fixed;
@@ -55,7 +55,11 @@ padding-bottom:1px;
 .container-1{
     padding-bottom: 8.5%;
     margin: 0%;
-    background-color:black;
+    background-image: url("Images/img-4.jpg");
+    background-size: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+
 }
 .HI{
         
@@ -292,7 +296,7 @@ padding-right: 20%;
 
                                                /* projects */
 
-.container-5{
+.container-2{
   background-color:rgb(255, 255, 255);
   padding-bottom: 21%;
 }
@@ -354,4 +358,124 @@ padding-right: 20%;
   border-radius:5px;
   margin-left: 90px;
 
+}
+
+
+/* experience */
+/*    contact form*/
+.container-form{
+  display: block; 
+  width:500px;
+  margin-left: 32.3%;
+}
+.container-form label{
+  display:inline-block;
+  float: left;
+  height: 1em;
+  font-weight:italic;
+  padding:6px 0px 0px;
+  line-height: 1em;
+  width:155px;
+  font-size:1.4em ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  margin: 5px 0px;
+  clear:both; 
+}
+.contact{
+  border-radius:7px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:55px;
+  padding-right: 30px;
+  background-color: floralwhite;
+}
+.container-form label small{
+  font-size:0.75em ;
+  color:grey;
+}
+.container-form input,textarea{
+  width:190px;
+padding-top: 10px;
+  margin:4px;
+  color:black;
+  border:1px solid gray;
+  font:0.8em "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;";
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  vertical-align:top;
+  transition:all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  box-shadow:0 0 5px black;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px;
+}
+.container textarea{
+  padding:10px;
+  margin:4px;
+  color:black;
+  background-color:white;
+  border:1px solid grey;
+  font:0.8em "Lucida Grande","Lucida Sans Unicode",Arial,Sans-serif;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  vertical-align:top;
+  transition:all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  box-shadow:0 0 5px black;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px;
+}
+
+.container-form input:focus,textarea:focus{
+  border:1px solid grey;
+  background-color:white;
+  color:black;
+  font-size:0.8em;
+  outline:none;
+  position:relative;
+  z-index:5;
+  box-shadow:0 0 5px lightblue;
+  -webkit-box-shadow: 0 0 5px lightblue;
+  -moz-box-shadow: 0 0 5px lightblue;
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  transition:all 0.25s ease-in-out;
+  -webkit-transition: all 0.25 ease-in-out;
+  -moz-transition:all 0.25 ease-in-out;
+}
+.container-form input.submit{
+  width:auto;
+  margin-left: 40%;
+  margin-top: 5px;
+  cursor:pointer;
+  position:relative;
+  border: 1px solid black;
+  color:white;
+  padding:10px 20px;
+  text-decoration:none;
+  font-size:1.0em;
+  background: linear-gradient(to right,rgb(7, 33, 177) 10%,rgb(153, 29, 255) 100%);
+  box-shadow:0 2 3px black;
+  -moz-box-shadow:0 1 3px black;
+  -webkit-box-shadow:0 1 3px black;
+}
+.container-form input.submit:hover{
+  background:black;
+  }
+.container-form input.submit:active, .container input.submit:focus{
+  top:1px;
+}
+#contact-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 50px;
+  background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(36, 33, 184) 40%,rgb(223, 53, 53) 60%,
+        rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
+        -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
 }

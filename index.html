@@ -14,11 +14,11 @@
             <nav class = "navbar">
                 <ul class="nav-ul">
                     <ul class="nav-item">
-                        <a href="#top-of-page" class  = "nav-link" id = "nav-link" style ="text-decoration:none;
+                        <a href="" class  = "nav-link" id = "nav-link" style ="text-decoration:none;
                          padding-right:4px;">Resume</a>
                          </ul>
                     <ul class="nav-item">
-                        <a href ="#container-5"  class = "nav-link" id = "nav-link" style ="text-decoration:none;
+                        <a href ="#container-4"  class = "nav-link" id = "nav-link" style ="text-decoration:none;
                         ">Contact</a>
                         </ul>
                     <ul class="nav-item">
@@ -41,7 +41,7 @@
 
     
     <body>                             <!-- main container-->
-          <div class="container-1" id="container-1">
+          <div class="container-1" id="container-1" >
            <li class="HI" style="list-style: none;" id="HI">Hello, I am</li>
            <li class="Name" style="list-style: none;" id="Name">HARSHAVARDHAN</li>
            <li class="tagline"  style="list-style: none;" id="tagline"> Sophomore | Front End Web Developer | Open Source Enthusiast </li>
@@ -123,7 +123,7 @@
 
            <!-- projects-->
            <div id="whitespace-2" style="padding-top: 0px;"></div>
-           <div class="container-5" id="container-5">
+           <div class="container-2" id="container-2">
             <p class="Projects" id = "Projects">Projects</p>
                <div class="row-1">
                <div class="card">
@@ -167,5 +167,41 @@
            </div>
    
 
+
+
+
+
+
+
+
+
+           <!--form-->
+<div class="container-4" id="container-4" style=" padding-bottom: 3%; background-color:white;">
+        <form method="POST" action="mail.php" name="contactform" id="contactform" autocomplete="on" style="padding-top: 0%;"> 
+          <p id="contact-text">Contact Me</p> 
+          <div class = "container-form">
+           <fieldset class = "contact">  
+                   <div> 
+                     <label for="name" >Your Name</label> 
+                     <input name="name" type="text" id="name" placeholder="Enter your name" required="required" /> 
+                   </div> 
+                   <div> 
+                     <label for="email">Email</label> 
+                     <input name="email" type="email" id="email" placeholder="Enter your email address"
+                     required="required" /> 
+                   </div>	            			
+                   <div> 
+               <label for="phone">Phone <small>(optional)</small></label> 
+                     <input name="phone" type="tel" id="phone" size="30" placeholder="Enter your phone number" /> 
+                   </div> 	             
+                <div> 
+               <label for="message">Message</label> 
+                     <textarea name="message"  id="message"  cols="30" rows="4" placeholder="Enter your message" spellcheck="true" required="required"></textarea> 
+                   </div>      
+               </fieldset>    
+                 <input type="submit"  class = "submit" id="submit" value="Submit"/>
+            </div>
+                </form> 
+</div>
     </body>
 </html>
