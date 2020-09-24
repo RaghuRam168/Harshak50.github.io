@@ -35,6 +35,8 @@ document.querySelector('.alert').getElementsByClassName.display='block';
 setTimeout(function(){
     document.querySelector('.alert').getElementsByClassName.display='none';
 },3000);
+
+  document.getElementById('contactform').reset;
 }
 
 // function to get form values
