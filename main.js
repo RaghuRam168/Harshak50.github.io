@@ -12,7 +12,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-  var messagesRef = firebase.database().ref('messages');
+  var messagesRef = firebase.database();
 
 
 
