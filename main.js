@@ -27,9 +27,15 @@ function submitForm(e){
    var name =getInputVal('phone');  
    var name =getInputVal('message');  
   
-}
+
 
 saveMessage(name,email,phone,message);
+document.querySelector('.alert').getElementsByClassName.display='block';
+
+setTimeout(function(){
+    document.querySelector('.alert').getElementsByClassName.display='none';
+},3000);
+}
 
 // function to get form values
 function getInputVal(id){
