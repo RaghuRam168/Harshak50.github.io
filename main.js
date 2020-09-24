@@ -29,7 +29,7 @@ function submitForm(e){
   
 }
 
-saveMessage(name,email,phone,message)
+saveMessage(name,email,phone,message);
 
 // function to get form values
 function getInputVal(id){
@@ -40,7 +40,7 @@ function getInputVal(id){
 function saveMessage(name,email,phone,message){
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        name:name,
+        name:  name,
         email : email,
         phone: phone,
         message :message
