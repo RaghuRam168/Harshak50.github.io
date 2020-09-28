@@ -7,6 +7,7 @@ html,body{
   html{ scroll-behavior: smooth;
     --top-spacing: 10px;
     scroll-padding-top: var(--top-spacing);
+    
   }
   
                                                                             /* header*/
@@ -46,20 +47,40 @@ padding-bottom:1px;
 }
 .nav-link{
 
-    color:rgb(45, 247, 186);
+    color: rgb(45, 247, 186);
 }
 .nav-link:hover {
-    color: lavender;
+    color:floralwhite;
   }
+
+
+
+
+
+
+
+
+
+
                                                     /* main */
 .container-1{
     padding-bottom: 8.5%;
     margin: 0%;
-    background-size: 100%;
-    background-color: black;
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%,black 70%,rgb(0, 0, 0) 100%);
     background-repeat: no-repeat;
 
 }
+
+@keyframes particleAnimation
+{
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc( 100% + 100px );
+    }
+}
+
 .HI{
         
         padding-right: 0px;
@@ -82,9 +103,9 @@ padding-bottom:1px;
            margin-top: 0px;
            margin-left: 0px;
            background: linear-gradient(to right,rgb(122, 243, 9) 10%, rgb(86, 253, 9) 20%, rgb(61, 58, 243) 40%,rgb(245, 31, 31) 60%,
-           rgb(231, 170, 37) 80%,rgb(255, 183, 29) 100%);
+           rgb(231, 170, 37) 80%,rgb(255, 183, 29) 100%);  
           -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;  
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .tagline{
@@ -228,8 +249,9 @@ padding-bottom:1px;
     opacity: 1;
   }
 }             
-                                                     /* About me*/
 
+
+                                                     /* About me*/                                                
  .Aboutme{
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align: center;
@@ -264,7 +286,7 @@ padding-bottom:1px;
  }
       
          
- /*skills*/
+                                                              /*skills*/
  .skill-main{
 
    padding-left: 10%;
@@ -279,23 +301,57 @@ padding-right: 20%;
  }
  .skill-container {
   width: 300px;
+  border-radius: 5px;
   height: 7px;
   background-color: #ddd;
 }
-.html {width: 70%; height:7px; background-color: #f0701a;}
-.js{width: 20%;  height:7px;background-color: #2196F3;}
-.git {width: 85%;  height:7px;background-color: rgb(248, 193, 11)}
-.c {width: 70%;  height:7px;background-color: #42e6a7;}
-.java {width: 85%;  height:7px;background-color: #7f1dcf;}
-.cpp {width: 50%;  height:7px;background-color: #17d340;}
-.flutter {width: 25%;  height:7px;background-color: #c01d11;}
+.html {width: 70%; height:7px; background-color: #f0701a; border-radius: 15px;}
+.js{width: 20%;  height:7px;background-color: #2196F3; border-radius: 15px;}
+.git {width: 85%;  height:7px;background-color: rgb(248, 193, 11); border-radius: 15px;}
+.c {width: 70%;  height:7px;background-color: #42e6a7; border-radius: 15px;}
+.java {width: 85%;  height:7px;background-color: #7f1dcf; border-radius: 15px;}
+.cpp {width: 50%;  height:7px;background-color: #17d340; border-radius: 15px;}
+.flutter {width: 25%;  height:7px;background-color: #c01d11; border-radius: 15px;}
 
+
+
+                         /* experinece */
+.customupdates{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title-exp{
+  font-size: 60px;
+  text-align: center;
+  padding-top: 13%;
+  background: linear-gradient(to right,rgb(89, 177, 7) 10%, rgb(82, 218, 19) 20%, rgb(36, 33, 184) 40%,rgb(223, 53, 53) 60%,
+           rgb(194, 149, 53) 80%,rgb(255, 183, 29) 100%);
+           -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+}
+.exp{
+  text-decoration: none;
+  font-size: 20px;
+  color:  #42e6a7;
+}
+.para-exp{
+  margin-left:30%;
+  margin-right: 30%;
+  color:gray;
+  font-size: 20px;
+}
+#exp{
+margin-left: 25%;
+}
+#exp :hover{
+  color :lavenderblush;
+}
 
 
 
                                                /* projects */
 
-.container-2{
+.container-4{
   background-color:rgb(255, 255, 255);
   padding-bottom: 21%;
 }
@@ -358,12 +414,7 @@ padding-right: 20%;
   margin-left: 90px;
 
 }
-
-/* experience */
-
-
-
-/* contact me */
+                                                          /* contact me */
 .container-form{
   border-radius: 5px;
   width:500px;
