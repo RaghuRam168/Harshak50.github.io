@@ -1,4 +1,4 @@
-// Initialize Firebase (ADD YOUR OWN DATA)
+// Initialize Firebase 
 var firebaseConfig = {
     apiKey: "AIzaSyCJHS46Cw5oZvURLgWskzV9aF3WR19Smg0",
     authDomain: "contactform-c0a0c.firebaseapp.com",
