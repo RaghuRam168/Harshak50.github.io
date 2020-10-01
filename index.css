@@ -172,6 +172,7 @@ padding-bottom:1px;
   padding-top: 6%;
   padding-left: 48.5%;
   height: 24px;
+  cursor: pointer;
 }
 
 .chevron {
@@ -266,10 +267,12 @@ padding-bottom:1px;
     width: 300px;
     height: 300px;
     float: left;
-    padding: 2.5%;
+    padding: 3.5%;
     margin:0px;
     border-radius: 50%;
+    background: grey;
   }
+
  #intro{
      padding-left:30px;
      text-align: right;
@@ -299,19 +302,167 @@ padding-bottom:1px;
 padding-right: 20%;
    float:right;
  }
+
  .skill-container {
   width: 300px;
   border-radius: 5px;
   height: 7px;
   background-color: #ddd;
 }
-.html {width: 70%; height:7px; background-color: #f0701a; border-radius: 15px;}
-.js{width: 20%;  height:7px;background-color: #2196F3; border-radius: 15px;}
-.git {width: 85%;  height:7px;background-color: rgb(248, 193, 11); border-radius: 15px;}
-.c {width: 70%;  height:7px;background-color: #42e6a7; border-radius: 15px;}
-.java {width: 85%;  height:7px;background-color: #7f1dcf; border-radius: 15px;}
-.cpp {width: 50%;  height:7px;background-color: #17d340; border-radius: 15px;}
-.flutter {width: 25%;  height:7px;background-color: #c01d11; border-radius: 15px;}
+
+.html {
+    width: 70%;
+    height:7px;
+    background-color: #f0701a; 
+    border-radius: 15px;
+    animation: html 4s;
+}
+
+
+.js{
+  width: 20%;  
+  height:7px;
+  background-color: #2196F3; 
+  border-radius: 15px;
+  animation: js 4s;
+}
+.git {
+  width: 85%;  
+  height:7px;
+  background-color: rgb(248, 193, 11);
+   border-radius: 15px;
+   animation:git 4s;
+}
+
+.c {
+  width: 70%; 
+   height:7px;
+   background-color: #42e6a7; 
+   border-radius: 15px;
+   animation:c 4s;
+  }
+.java {
+  width: 85%; 
+   height:7px;
+   background-color: #7f1dcf; 
+   border-radius: 15px;
+   animation:java 4s;
+  }
+
+.cpp {
+  width: 50%;  
+  height:7px;
+  background-color: #17d340;
+   border-radius: 15px;
+   animation:cpp 4s;
+  }
+
+.flutter {
+  width: 25%; 
+   height:7px;
+   background-color: #c01d11; 
+   border-radius: 15px;
+   animation:flutter 4s;
+  }
+
+/*Key Frames */
+@keyframes html
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:70%;
+
+  }
+}
+
+@keyframes js
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:20%;
+
+  }
+}
+
+@keyframes git
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:85%;
+
+  }
+}
+
+@keyframes c
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:70%;
+
+  }
+}
+@keyframes java 
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:85%;
+
+  }
+}
+@keyframes cpp
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:50%;
+
+  }
+}
+@keyframes flutter
+{
+  0%
+  {
+    width:0%;
+
+  }
+  100%
+  {
+    width:25%;
+
+  }
+}
+
+
+
 
 
 
